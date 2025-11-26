@@ -1,0 +1,43 @@
+{
+  "name": "mcp-sap-commerce",
+  "version": "1.0.0",
+  "description": "SAP Commerce API client for Model Context Protocol",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc -w",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "sap",
+    "commerce",
+    "api",
+    "client",
+    "mcp"
+  ],
+  "author": "Original: Dunkansdk, Modified by: Srikanth",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hub-cloud/angular-commerce-chat.git",
+    "directory": "packages/mcp-server"
+  },
+  "homepage": "https://github.com/Dunkansdk/mcp-sap-commerce",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.10.1",
+    "axios": "^1.6.7",
+    "dotenv": "^16.5.0",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

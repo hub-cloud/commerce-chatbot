@@ -1,0 +1,34 @@
+{
+  "name": "angular-commerce-chat",
+  "version": "0.0.1",
+  "description": "A lean, reusable Angular chat component for SAP Commerce storefronts with AI-powered assistance",
+  "keywords": [
+    "angular",
+    "sap-commerce",
+    "hybris",
+    "spartacus",
+    "chat",
+    "ai",
+    "assistant",
+    "component",
+    "library"
+  ],
+  "author": "Srikanth",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hub-cloud/angular-commerce-chat.git"
+  },
+  "homepage": "https://github.com/hub-cloud/angular-commerce-chat#readme",
+  "bugs": {
+    "url": "https://github.com/hub-cloud/angular-commerce-chat/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^19.0.0",
+    "@angular/core": "^19.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,48 @@
+# License Notice
+
+This repository contains multiple independent software components, each with its own license:
+
+## Component Licenses
+
+### 1. MCP Server (`packages/mcp-server/`)
+**License:** GNU General Public License v3.0 (GPL-3.0)
+**Copyright:** Original authors (forked from https://github.com/Dunkansdk/mcp-sap-commerce)
+**License File:** [packages/mcp-server/LICENSE](./packages/mcp-server/LICENSE)
+
+This component was forked from an existing GPL-3.0 licensed repository and retains that license.
+
+### 2. Bridge Service (`packages/bridge-service/`)
+**License:** MIT License
+**Copyright:** 2025 Srikanth
+**License File:** [packages/bridge-service/LICENSE](./packages/bridge-service/LICENSE)
+
+### 3. UI Component (`packages/ui/`)
+**License:** MIT License
+**Copyright:** 2025 Srikanth
+**License File:** [packages/ui/projects/angular-commerce-chat/LICENSE](./packages/ui/projects/angular-commerce-chat/LICENSE)
+
+## Aggregate Work
+
+These components communicate via network protocols (HTTP and MCP) and are designed to operate as separate, independent programs. Under GPL-3.0 Section 5, this constitutes an "aggregate" work, meaning:
+
+- The GPL-3.0 license of the MCP Server does NOT extend to other components
+- Each component retains its own license
+- Users may use, modify, and distribute each component under its respective license
+
+## Usage Rights
+
+- **MCP Server:** Must be used, modified, and distributed under GPL-3.0 terms
+- **Bridge Service:** May be used under MIT license terms
+- **UI Component:** May be used under MIT license terms
+
+## Attribution
+
+When using or distributing this software:
+- Preserve all copyright notices
+- Include copies of all relevant licenses
+- Clearly indicate which components are under which licenses
+- If modifying the MCP Server, comply with GPL-3.0 requirements (provide source, maintain GPL-3.0 license)
+
+## Questions?
+
+If you have questions about licensing, please open an issue on GitHub.

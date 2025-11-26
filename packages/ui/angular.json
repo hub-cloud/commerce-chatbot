@@ -1,0 +1,30 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "angular-commerce-chat": {
+      "projectType": "library",
+      "root": "projects/angular-commerce-chat",
+      "sourceRoot": "projects/angular-commerce-chat/src",
+      "prefix": "scc",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angular-commerce-chat/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-commerce-chat/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angular-commerce-chat/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
+    }
+  }
+}

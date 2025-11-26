@@ -1,0 +1,56 @@
+{
+  "name": "angular-commerce-chat-monorepo",
+  "version": "1.0.0",
+  "description": "Complete AI-powered chat solution for e-commerce with Angular UI, Bridge Service, and MCP Server",
+  "private": true,
+  "author": "Srikanth",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hub-cloud/angular-commerce-chat.git"
+  },
+  "scripts": {
+    "install:all": "npm run install:mcp && npm run install:bridge && npm run install:ui",
+    "install:mcp": "npm install --prefix packages/mcp-server",
+    "install:bridge": "npm install --prefix packages/bridge-service",
+    "install:ui": "npm install --prefix packages/ui",
+
+    "start:mcp": "npm start --prefix packages/mcp-server",
+    "start:bridge": "npm start --prefix packages/bridge-service",
+    "start:ui": "cd packages/ui && npm run ng serve",
+
+    "dev:mcp": "npm run dev --prefix packages/mcp-server",
+    "dev:bridge": "npm run dev --prefix packages/bridge-service",
+
+    "build:mcp": "npm run build --prefix packages/mcp-server",
+    "build:bridge": "npm run build --prefix packages/bridge-service",
+    "build:ui": "cd packages/ui && npm run ng build angular-commerce-chat -- --configuration production",
+    "build:all": "npm run build:mcp && npm run build:bridge && npm run build:ui",
+
+    "test:mcp": "npm test --prefix packages/mcp-server",
+    "test:bridge": "npm test --prefix packages/bridge-service",
+    "test:ui": "cd packages/ui && npm run ng test angular-commerce-chat",
+    "test:all": "npm run test:mcp && npm run test:bridge && npm run test:ui",
+
+    "clean": "node -e \"require('fs').rmSync('packages/mcp-server/node_modules',{recursive:true,force:true});require('fs').rmSync('packages/bridge-service/node_modules',{recursive:true,force:true});require('fs').rmSync('packages/ui/node_modules',{recursive:true,force:true});require('fs').rmSync('packages/mcp-server/dist',{recursive:true,force:true});require('fs').rmSync('packages/bridge-service/dist',{recursive:true,force:true});require('fs').rmSync('packages/ui/dist',{recursive:true,force:true})\"",
+    "clean:mcp": "node -e \"require('fs').rmSync('packages/mcp-server/node_modules',{recursive:true,force:true});require('fs').rmSync('packages/mcp-server/dist',{recursive:true,force:true})\"",
+    "clean:bridge": "node -e \"require('fs').rmSync('packages/bridge-service/node_modules',{recursive:true,force:true});require('fs').rmSync('packages/bridge-service/dist',{recursive:true,force:true})\"",
+    "clean:ui": "node -e \"require('fs').rmSync('packages/ui/node_modules',{recursive:true,force:true});require('fs').rmSync('packages/ui/dist',{recursive:true,force:true})\""
+  },
+  "keywords": [
+    "angular",
+    "chat",
+    "commerce",
+    "ecommerce",
+    "sap-commerce",
+    "hybris",
+    "spartacus",
+    "ai",
+    "mcp",
+    "monorepo"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
